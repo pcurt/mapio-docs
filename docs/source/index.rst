@@ -1,22 +1,21 @@
-Welcome to Lumache's documentation!
-===================================
+Documentation for MAPIO project
+=======================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This GitHub includes all the documentation (hardware and software for the MAPIO project
+MAPIO (Modular Automation PI Opensource) is a smart home gateway with its own embedded Linux distribution and so much more !
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+This product has been developed in eco-friendly way :
 
-.. note::
-
-   This project is under active development.
+* All the source code is open source
+* Hardware is documented to be reparable
+* The product is evolutive and multi functions (see the product description page).
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   MAPIO OS description
+   Configure MAPIO OS
+   Update MAPIO OS
+   Build a Yocto Linux Image (MAPIO OS)
