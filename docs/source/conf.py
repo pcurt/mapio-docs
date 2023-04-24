@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'MAPIO'
+copyright = 'Pierrick Curt'
+author = 'Pierrick Curt'
 
 release = '0.1'
 version = '0.1.0'
