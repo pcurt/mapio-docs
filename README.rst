@@ -1,9 +1,11 @@
-Template for the Read the Docs tutorial
+Documentation for MAPIO project
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub includes all the documentation (hardware and software for the MAPIO project
+MAPIO (Modular Automation PI Opensource) is a smart home gateway with its own embedded Linux distribution and so much more !
 
-Read the tutorial here:
+This product has been developed in eco-friendly way :
 
-https://docs.readthedocs.io/en/stable/tutorial/
+* All the source code is open source
+* Hardware is documented to be reparable
+* The product is evolutive and multi functions (see the product description page)
