@@ -18,13 +18,14 @@ Contents
    :hidden:
    :caption: Example
    :glob:
-   usage
-   api
+   
+   /usage
+   /api
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Software
+   :caption: 💻 Software
    :glob:
 
    /os-description
