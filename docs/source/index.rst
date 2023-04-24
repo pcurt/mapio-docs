@@ -14,13 +14,20 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Example
+   :glob:
    usage
    api
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Software
-   MAPIO OS description
-   Configure MAPIO OS
-   Update MAPIO OS
-   Build a Yocto Linux Image (MAPIO OS)
+   :glob:
+
+   /os-description
+   /os-configure
+   /os-update
+   /os-build
