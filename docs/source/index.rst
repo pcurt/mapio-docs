@@ -14,7 +14,12 @@ Contents
 --------
 
 .. toctree::
+   usage
+   api
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Software
    MAPIO OS description
    Configure MAPIO OS
    Update MAPIO OS
