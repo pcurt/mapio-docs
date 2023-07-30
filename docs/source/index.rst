@@ -16,11 +16,11 @@ Contents
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Example
+   :caption: ⚙️ Hardware
    :glob:
    
-   /usage
-   /api
+   /hw-description
+   /hw-repair
 
 .. toctree::
    :maxdepth: 2
