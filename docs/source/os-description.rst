@@ -22,8 +22,8 @@ Some services are running on the host, here is the list of this services and the
     * rauc.service:
         MAPIO uses RAUC tool to manage OTA updates(see :doc:`OS Update <os-update>`)
 
-    * mnt.mount:
-        It uses sytemd mount feature to mount the NVMe disk if the SSD is present
+    * usr-local-nvme.automount/usr-local-nvme.mount:
+        It uses sytemd automount feature to mount the NVMe disk if the SSD is present
 
 * Custom services:
     * mapio-init.service:
