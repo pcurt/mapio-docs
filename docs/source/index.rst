@@ -7,7 +7,7 @@ MAPIO (Modular Automation PI Opensource) is a smart home gateway with its own em
 This product has been developed in eco-friendly way :
 
 * All the source code is open source
-* Hardware is documented to be reparable
+* Hardware is documented to be repairable
 * The product is evolutive and multi functions (see the product description page).
 
 Contents
@@ -19,7 +19,8 @@ Contents
    :caption: ⚙️ Hardware
    :glob:
    
-   /hw-description
+   /hw-getting-started
+   /hw-full-description
    /hw-repair
 
 .. toctree::
