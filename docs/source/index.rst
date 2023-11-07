@@ -33,4 +33,3 @@ Contents
    /os-configure
    /os-update
    /os-build
-   /examples
