@@ -14,7 +14,7 @@ Some services are running on the host, here is the list of this services and the
 
 * Global services:
     * docker.service:
-         Docker is used to launch ever specific software on MAPIO OS (see :doc:`Examples <examples>`)
+         Docker is used to launch ever specific software on MAPIO OS
     
     * mosquitto.service:
          This is the MQTT broker used by docker services to communicate each over.
