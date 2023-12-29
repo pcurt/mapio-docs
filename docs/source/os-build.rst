@@ -11,7 +11,7 @@ To build your own distribution you will need a build machine with the following 
 * Linux machine
 * At least 90Go of free disk
 * At least 8Go of RAM and at least a 4 CPU cores
-* Follow the following README https://github.com/pcurt/yocto-build/blob/main/README.md to install :
+* Follow the following README https://github.com/pcurt/yocto-build/blob/main/README.md to install:
     * Git
     * Docker
     * CQFD 

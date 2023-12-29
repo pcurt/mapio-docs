@@ -43,7 +43,7 @@ Check that the setup wizard webserver is running using the epaper interface.
 The webserver is automatically running at first boot and until it has been disabled.
 
 With a navigator, go the address 
-http://YOUR_LOCAL_IP:8456/
+http://YOUR_LOCAL_IP/
 
 You will see the following homepage:
 
@@ -56,7 +56,7 @@ The officials bundle can be found here https://iotheque.com/mapio/files
 
 Then click on **update**, it will process the following actions:
 
-*  Transfer the bundle on the targe
+*  Transfer the bundle on the target
 *  Install the bundle using RAUC utility
 *  Reboot the gateway
   
