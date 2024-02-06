@@ -15,7 +15,7 @@ PCB1 is mandatory, and provide the following functions :
 * 1x USB-C 2.0 
 * 1x USB-A 2.0
 * Internal USB-C connector for debug purposes
-* Optocooupled UART input for TIC
+* Optocoupled UART input for TIC (Linky)
 * RS485 10 Mbps transceiver
 * 250V 10A relay
 * 5V Fan connector
@@ -40,7 +40,7 @@ The case is a customized version of `Bud DMB-4773 <https://www.budind.com/produc
 You need to have at least 6 free spaces (108 mm) on your switchboard for MAPIO, plus space for AC-DC power supply. 9 free spaces are recommended.
 
 Electrical specifications and installation
------------------------------
+------------------------------------------
 
 MAPIO has to be powered by a 5V DC, 2A power supply. The power input connector is on the upper left side of the casing.
 
@@ -52,3 +52,8 @@ You need to use the provided `Wurth 691361100002 connector <https://www.we-onlin
 Connect the output of the AC-DC converter (for example, `Mean Well HDR-30-5 <https://www.meanwell.fr/alimentations-din-rail/ac-dc/5/2-4,3,5/ac-dc-ultra-slim-din-rail-power-supply-input-range-hdr--30--5>`_) to J1001 connector.
 
 Note : the use of a 2A circuit breaker upstream of the AC-DC converter is highly recommended.
+
+Jumper configurations
+------------------------------------------
+
+
