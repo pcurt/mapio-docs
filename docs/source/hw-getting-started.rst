@@ -56,4 +56,17 @@ Note : the use of a 2A circuit breaker upstream of the AC-DC converter is highly
 Jumper configurations
 ------------------------------------------
 
+The main board has several configurations available. These configurations can be set by putting jumpers on the board headers.
+
++----------+------------------------------+
+| Header   | Function                     |
++==========+==============================+
+| P104     | Compute Module Configuration |
++----------+------------------------------+
+| P901     | RS485 120R Configuration     |
++----------+------------------------------+
+| P1003    | 5V Configuration             |
++----------+------------------------------+
+| P1005    | 3V3 Configuration            |
++----------+------------------------------+
 
