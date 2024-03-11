@@ -42,7 +42,7 @@ Caddy is a easy to set up reverse proxy : https://caddyserver.com/docs/quick-sta
 In this example we will explain how to set up your own reverse proxy on Mapio.
 The the reverse proxy allows to run several services on the Mapio behind a server that manages the redirections and HTTPS certificates.
 
-From the file */home/root/caddy/docker-compose.yml* we see that the Caddyfile configuration is located here */usr/local/caddy/Caddyfile*
+From the file */home/root/mapio/docker-compose.yml* we see that the Caddyfile configuration is located here */usr/local/caddy/Caddyfile*
 We consider that you have already do the following setup:
 
 * Have a public domain name or address (YOUR_PUBLIC_DOMAIN)
@@ -57,17 +57,20 @@ Edit /usr/local/caddy/Caddyfile with theses content
         reverse_proxy host.docker.internal:8123
     }
 
-If Caddy was not already start it:
+Add the Caddy dependency to the Home Assistant section in */home/root/mapio/docker-compose.yml* file : 
 
 .. code-block:: console
 
-    $ docker-compose -f /home/root/caddy/docker-compose.yml up -d
+    depends_on:
+      - zigbee2mqtt
+      - caddy
 
-If Caddy was already running restart it :
+Restart the Home Assistant service:
 
 .. code-block:: console
 
-    $ docker-compose -f /home/root/caddy/docker-compose.yml restart
+    $ docker-compose -f /home/root/mapio/docker-compose.yml up -d homeassistant
+
 
 You can now access to your Home Assistant with a web browser *https://YOUR_PUBLIC_DOMAIN*
 
