@@ -29,6 +29,7 @@ Contents
    :caption: 💻 Software
    :glob:
 
+   /os-getting-started
    /os-description
    /os-configure
    /os-update
