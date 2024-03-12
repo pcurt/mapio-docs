@@ -61,6 +61,9 @@ Here is the list of the views and their information.
 
 View 1 : HOME view
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: ../images/view_1.png
+   :width: 100
+
 It displays : 
 
 * MAPIO logo
@@ -71,6 +74,9 @@ It displays :
 
 View 2 : SYSTEM view
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: ../images/view_2.png
+   :width: 100
+
 It displays : 
 
 * CPU usage
@@ -80,7 +86,10 @@ It displays :
 * MAPIO temperature
  
 View 3 : WEB SERVER view
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: ../images/view_3.png
+   :width: 100
+
 It displays : 
 
 * WIFI AP information (SSID and dynamic password) and the associated QR Code
@@ -90,6 +99,9 @@ You can enable/disable the web server by pressing MID button
 
 View 4 : STATUS view
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: ../images/view_4.png
+   :width: 100
+
 It displays : 
 
 * POWER status (charging/charged/ on battery)
