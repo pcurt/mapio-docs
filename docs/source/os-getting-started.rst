@@ -1,4 +1,4 @@
-MAPIO OS getting started
+OS getting started
 ==================================
 
 Power on MAPIO
@@ -9,7 +9,7 @@ Before power on your MAPIO:
 
 * Insert your Ethernet cable (optional)
 * Insert your SSD NVME disk (optional)
-* Insert the RF modules dedicated sockets (optional)
+* Insert the RF modules in dedicated sockets (optional)
 
 Power ON MAPIO.
 About 20 seconds after power ON, the epaper display shall be refreshed and the LEDs shall be driven.
@@ -24,7 +24,11 @@ There are three RGB Leds on MAPIO front panel:
   * Green: system is running
   * Orange: system is starting
   * Red: global failure
-* LED2 (on the middle) : **USER LED** your are free to control it from your Home Assistant instance
+
+* LED2 (on the middle) : **USER LED** :  
+
+  * are free to control it from your Home Assistant instance
+
 * LED3 (on the middle) : **BATTERY LED** :
 
   * Green (blinking): battery is charging
@@ -38,8 +42,8 @@ First setup
 If you are connected using Ethernet. You can see your IP address on epaper main screen. 
 You can now go to configuration section (see :doc:`OS Configure <os-configure>`).
 
-If you are not connected with Ethernet, a wifi Hotspot will be up. You can go the the epaper wifi and web server view to connect to 
-the Hotspot. The WIFI password is dynamic and is changed its time the WIFI Access Point is strated. There is two QR code on the epaper.
+If you are not connected with Ethernet, a wifi hotspot will be up. You can go the the epaper wifi and web server view to connect to 
+the hotspot. The WIFI password is dynamic and is changed its time the WIFI Access Point is strated. There is two QR code on the epaper.
 First one is to connect to the WIFI AP, the second one is to open the web server on an internet explorer.
 
 

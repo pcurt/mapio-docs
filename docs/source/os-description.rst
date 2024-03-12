@@ -1,4 +1,4 @@
-MAPIO OS description
+OS description
 ==================================
 
 MAPIO OS is generated using yocto tool, see the dedicated page for more information (:doc:`OS build <os-build>`.)

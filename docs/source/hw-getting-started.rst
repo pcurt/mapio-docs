@@ -1,4 +1,4 @@
-Getting started
+HW Getting started
 ====================
 
 Hardware overview
@@ -49,7 +49,7 @@ You need to use the provided `Wurth 691361100002 connector <https://www.we-onlin
 .. image:: ../images/mapio_board1_overview.png
    :width: 600
 
-Connect the output of the AC-DC converter (for example, `Mean Well HDR-30-5 <https://www.meanwell.fr/alimentations-din-rail/ac-dc/5/2-4,3,5/ac-dc-ultra-slim-din-rail-power-supply-input-range-hdr--30--5>`_) to J1001 connector.
+Connect the output of the AC-DC converter (for example, `Mean Well HDR-15-5 <https://www.meanwell.fr/alimentations-din-rail/all-technologie/5/ac-dc-ultra-slim-din-rail-power-supply-input-range-hdr--15--5?returnurl=%2falimentations-din-rail%2fall-technologie%2f5%2f%23hdr-15-5>`_) to J1001 connector.
 
 Note : the use of a 2A circuit breaker upstream of the AC-DC converter is highly recommended.
 
