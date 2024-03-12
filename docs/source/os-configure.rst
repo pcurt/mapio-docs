@@ -4,13 +4,13 @@ Configure MAPIO OS
 Basics configuration
 ---------------------
 
-Some basic setup can be done from the webapp configuration.
+Some basic setup can be done from the web server configuration.
 
-Check that the setup wizard web server is running using the epaper interface.
+Check that the web server is running using the epaper interface.
 The web server is automatically running at first boot and until it has been disabled.
 
 With a navigator, go the address 
-http://YOUR_LOCAL_IP:8456/
+http://YOUR_LOCAL_IP
 
 You will see the following homepage:
 
@@ -22,7 +22,7 @@ In SSH setup page you can add you ssh key, to access the MAPIO board with a cons
 Advanced configurations
 ------------------------
 
-When you have added you own SSH key using the webapp you can access to console with SSH
+When you have added you own SSH key using the web server you can access to console with SSH
 
 .. code-block:: console
 

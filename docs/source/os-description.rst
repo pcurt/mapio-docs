@@ -37,8 +37,32 @@ Some services are running on the host, here is the list of this services and the
         It exposes some hardware resources (GPIOs and GPU) on a MQTT broker using the Home Assistant protocol.
         It uses a custom python package that can be found here: https://github.com/pcurt/mapio_gpio_ha
       
-    * mapio-setup-wizard.service
-        It start a local webserver to facilitate some MAPIO OS setup (see :doc:`OS Configure <os-configure>`).
-        It uses a custom python package that can be found here: https://github.com/pcurt/mapio-setup-wizard
+    * mapio-webserver-back.service
+        It starts the backend used by web server to facilitate some MAPIO OS setup (see :doc:`OS Configure <os-configure>`).
+        It uses a custom python package that can be found here: https://github.com/pcurt/mapio-webserver-back
 
 
+Docker compose services
+------------------------
+MAPIO OS is delivered with some basic docker configuration. This configuration is in the file /home/root/mapio/docker-compose.yml.
+This file defines the following services:
+
+* homeassistant: an open source home automation system
+* zigbee2mqtt: to control zigbee network and devices
+* caddy: a reverse proxy
+* jellyfin: a media center
+* samba: for network file sharing
+* nextcloud: an open source file hosting service
+* domoticz: a lightweight home automation 
+
+These services can be controlled by the web server (see :doc:`OS Configure <os-configure>`).
+You can also access to the docker compose logs from the web server.
+
+.. warning::
+    The file /home/root/mapio/docker-compose.yml is overwritten during an update. If you modify it, you can replace the file by a symbolic link and keep your modified file in data partition (mounted on /usr/local).
+
+
+Security
+--------
+There is only a root user installed on the MAPIO OS. The SSH login by password is disabled. The only way to connect to your gateway is to add you SSH private key from the web server (see :doc:`OS Configure <os-configure>`). 
+We advise you to keep these security rules especially if you authorize external access. MAPIO is not connected to any custom cloud service, you have total control of your data.

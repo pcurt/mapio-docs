@@ -39,8 +39,8 @@ It is using a symmetric model with two main partitions (A and B). A flip/flop me
 RAUC uses cryptographic signing and verification of updates using OpenSSL (signatures based on x.509 certificates).
 An image update is called a bundle.
 
-Check that the setup wizard webserver is running using the epaper interface.
-The webserver is automatically running at first boot and until it has been disabled.
+Check that the setup web server is running using the epaper interface.
+The web server is automatically running at first boot and until it has been disabled.
 
 With a navigator, go the address 
 http://YOUR_LOCAL_IP/
@@ -61,7 +61,7 @@ Then click on **update**, it will process the following actions:
 *  Reboot the gateway
   
 The update process will take a few minutes, look at the epaper screen to see when MAPIO is available again.
-After the update, you can verify that the expected version has been installed on the setup wizard webserver or on the epaper screen.
+After the update, you can verify that the expected version has been installed on the setup web server or on the epaper screen.
 
 .. warning::
     The bundles are signed image. You can only update the running OS with a bundle with the correct signature.

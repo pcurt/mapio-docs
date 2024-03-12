@@ -84,4 +84,10 @@ The output bundle is located here
 
     $ yocto-build/build/tmp/deploy/images/mapio-cm4-64/mapio-bundle-image-mapio-cm4-64.raucb
 
+You can also generate a bundle containing kernel and device tree with this command
+
+.. code-block:: console
+
+    $ cqfd -b bundle-with-kernel
+
 You can now update your MAPIO OS following these instructions :doc:`OS Update <os-update>`
