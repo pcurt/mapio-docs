@@ -52,7 +52,7 @@ You will see the following homepage:
 
 
 Click on **OTA Update** then on next page click on **Choose file** and select the bundle.
-The officials bundle can be found here https://iotheque.com/mapio/files
+The officials bundle (mapio-bundle-xxx.raucb) can be found here https://github.com/pcurt/yocto-build/releases
 
 Then click on **update**, it will process the following actions:
 
