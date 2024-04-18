@@ -35,6 +35,38 @@ You can modify these docker compose files for your need.
 .. warning::
     */home/root* is erased when you update the OS with a new bundle. If you want to keep your files use the persistent partition mounted on */usr/local/*
 
+Configure your Home assistant with MAPIO plugin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MAPIO OS contains a plugin that exposes some hardware to Home Assistant. It uses the integrated MQTT broker to communicate with your HA instance.
+This plugin is started by the service *mapio-gpio-ha.service*.
+To enable it on your HA instance you juste need to add the MQTT integration and enable it with default configuration:
+
+* Address: localhost
+* Port: 1883
+* NO password
+
+After the MAPIO hardware will be automatically discovered:
+
+* RELAY1
+* LED_G
+* LED_B
+* LED_B
+* The UPS level
+* The linky measures (optionnal see the following section)
+
+Enable the linky feature
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MAPIO OS can read the Linky TIC port data and send it to HA using the MQTT broker.
+By default this feature is disabled. You can enable it by creating an empty file on your gateway.
+Connect to the gateway using SSH, then execute the following commands:
+
+.. code-block:: console
+
+    touch /usr/local/homeassistant/enable_linky
+    systemctl restart mapio-gpio-ha.service
+
 Configure your reverse proxy with Caddy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
