@@ -17,7 +17,7 @@ PCB1 is mandatory, and provide the following functions :
 * Internal USB-C connector for debug purposes
 * Optocoupled UART input for TIC (Linky)
 * RS485 10 Mbps transceiver
-* 250V 10A relay
+* 250V 4A relay
 * 5V Fan connector
 * Jumpers for power supply selection
 * Jumpers for Wifi/BLE/BOOT configuration
@@ -37,7 +37,7 @@ Mechanical overview
 MAPIO has been designed to be installed on DIN rail.
 The case is a customized version of `Bud DMB-4773 <https://www.budind.com/product/general-use-boxes/din-rail-mount-multi-board-box-series/dmb-4773/>`_.
 
-You need to have at least 6 free spaces (108 mm) on your switchboard for MAPIO, plus space for AC-DC power supply. 9 free spaces are recommended.
+You need to have at least 6 free spaces (108 mm) on your switchboard for MAPIO, plus space for AC-DC power supply. 7 free spaces are recommended.
 
 Electrical specifications and installation
 ------------------------------------------
@@ -69,4 +69,33 @@ The main board has several configurations available. These configurations can be
 +----------+------------------------------+
 | P1005    | 3V3 Configuration            |
 +----------+------------------------------+
+
+**Compute Module Configuration :**
+
+.. image:: ../images/mapio_board1_P104.png
+   :width: 600
+
+**RS485 120R Configuration :**
+
+Connect a jumper on P901 if you want to enable 120R termination resistance for RS485. By default, the jumper is not mounted.
+The need for the termination resistance depends on your RS485 network.
+
+**5V Configuration :**
+
+This connector allows you to choose who provides the 5V Power supply : 
+
+* Connect a jumper between mid-point and DC to power the 5V rail through upper left 5V IN connector (Default configuration)
+* Connect a jumper between mid-point and USB to power the 5V rail through J302 USB OTG connector
+
+Please note :
+
+* Do not connect the three headers
+* When USB OTG power supply is enabled, U300 USB Switch disconnects the USB hub and connects J302 to the Compute Module. This is used when you want to flash the Compute Module.
+
+**3V3 Configuration :**
+
+This connector allows you to choose who provides the 3V3 Power supply : 
+
+* Connect a jumper between mid-point and UPS to use the embedded regulator on PCB2 for the 3V3 source (Default configuration). Please note that you need to connect PCB2 to PCB1 before starting MAPIO.
+* Connect a jumper between mid-point and CM to use the Compute Module as the 3V3 source
 
