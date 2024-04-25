@@ -37,5 +37,6 @@ You can start by reading the hardware getting started and the the software getti
    /os-getting-started
    /os-description
    /os-configure
+   /default-containers
    /os-update
    /os-build
