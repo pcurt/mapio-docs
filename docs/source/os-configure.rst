@@ -55,17 +55,16 @@ After the MAPIO hardware will be automatically discovered:
 * The UPS level
 * The linky measures (optionnal see the following section)
 
-Enable the linky feature
+Use the linky feature
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 MAPIO OS can read the Linky TIC port data and send it to HA using the MQTT broker.
-By default this feature is disabled. You can enable it by creating an empty file on your gateway.
-Connect to the gateway using SSH, then execute the following commands:
+This feature uses a docker service *teleinfo2mqtt*.
 
 .. code-block:: console
 
-    touch /usr/local/homeassistant/enable_linky
-    systemctl restart mapio-gpio-ha.service
+    $ docker compose -f /home/root/mapio/docker-compose.yml up -d teleinfo2mqtt
+
 
 Configure your reverse proxy with Caddy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -101,7 +100,7 @@ Restart the Home Assistant service:
 
 .. code-block:: console
 
-    $ docker-compose -f /home/root/mapio/docker-compose.yml up -d homeassistant
+    $ docker compose -f /home/root/mapio/docker-compose.yml up -d homeassistant
 
 
 You can now access to your Home Assistant with a web browser *https://YOUR_PUBLIC_DOMAIN*
