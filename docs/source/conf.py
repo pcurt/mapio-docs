@@ -6,8 +6,8 @@ project = 'MAPIO'
 copyright = 'Pierrick Curt'
 author = 'Pierrick Curt'
 
-release = '1.0'
-version = '1.0.0'
+release = '1.4'
+version = '1.4.0'
 
 # -- General configuration
 
