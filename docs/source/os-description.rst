@@ -54,9 +54,23 @@ This file defines the following services:
 * samba: for network file sharing
 * nextcloud: an open source file hosting service
 * domoticz: a lightweight home automation 
+* resticprofile: a backup service
+* teleinfo2mqtt: a service to read the Linky TIC port data and send it to HA using the MQTT broker
+* matter-server: a service to control matter devices
+* otbr: a service to control thread devices
+* wireguard: a service to create a VPN
 
 These services can be controlled by the web server (see :doc:`OS Configure <os-configure>`).
-You can also access to the docker compose logs from the web server.
+From the web server you can:
+
+* start, stop, a service
+* create a service
+* pull and update a service
+* see the logs of the services
+* check the status of the services
+* check for updates
+* see ports used by the services
+
 
 .. warning::
     The file /home/root/mapio/docker-compose.yml is overwritten during an update. If you modify it, you can replace the file by a symbolic link and keep your modified file in data partition (mounted on /usr/local).
