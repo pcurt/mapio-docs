@@ -40,3 +40,4 @@ You can start by reading the hardware getting started and the the software getti
    /os-update
    /os-build
    /zigbee-rf-module
+   /nrf-rcp-module

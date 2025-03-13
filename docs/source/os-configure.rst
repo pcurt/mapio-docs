@@ -126,3 +126,34 @@ You can access to:
 
 * Home Assistant : *https://YOUR_PUBLIC_DOMAIN*
 * Nextcloud : *https://ncloud.YOUR_PUBLIC_DOMAIN*
+
+Enabe Matter over Thread
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Matter is a new smart home protocol that will be supported by the MAPIO OS. To use mattter
+over thread you need to have a RCP module (see :doc:`NRF RCP module <nrf-rcp-module>`).
+
+Then you need somme configuration in the */home/root/mapio/docker-compose.yml* file:
+
+* otbr: update **DEVICE** and *devices* according to the RF slot used by the RCP module
+* otbr: **BACKBONE_IF** is the interface used by the thread network (wlan0 or end0)
+* matter-server: **primary-interface** is the interface used by the thread network (wlan0 or end0)
+
+After this configuration you can start the services:
+
+.. code-block:: console
+
+    $ docker compose -f /home/root/mapio/docker-compose.yml up -d matter-server
+
+Then go to your Home Assistant instance and add the following integrations:
+
+* https://www.home-assistant.io/integrations/matter
+* https://www.home-assistant.io/integrations/thread
+* https://www.home-assistant.io/integrations/otbr
+
+Configure the matter integration by adding an entry with default paramters (**ws://localhost:5580/ws**).
+Configure the open thread by adding the URL **http://localhost:8081**
+Configure the thread integration by slecting your default OTBR (Open Thread Border Router) instance and 
+select to use the identiants for iOS and Android.
+
+You can now add you matter devices over thread from your companion app.
